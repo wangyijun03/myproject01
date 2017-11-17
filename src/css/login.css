@@ -1,0 +1,232 @@
+#nav {
+  font-size: 12px;
+  height: 32px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #F2F2F2;
+  line-height: 32px;
+}
+
+#nav .nav_l {
+  float: left;
+  width: 250px;
+}
+
+#nav .nav_l .login {
+  color: #6C6C6C;
+}
+
+#nav .nav_l .login a {
+  color: #EC3E7D;
+  text-decoration: underline;
+}
+
+#nav .nav_l .logined {
+  color: #6C6C6C;
+  display: none;
+}
+
+#nav .nav_l .logined a {
+  color: #EC3E7D;
+  text-decoration: underline;
+}
+
+#nav .nav_r {
+  width: 670px;
+  float: left;
+  margin-left: 284px;
+}
+
+#nav .nav_r ul {
+  width: 670px;
+  height: 32px;
+  float: right;
+}
+
+#nav .nav_r ul li {
+  float: left;
+  padding: 0 10px;
+}
+
+#nav .nav_r ul li a {
+  color: #6C6C6C;
+  text-decoration: none;
+}
+
+#nav .nav_r ul li i {
+  padding: 0 5px;
+  color: #EC3E7D;
+}
+
+#nav .nav_r ul li .weiboi {
+  color: #E99E40;
+}
+
+#nav .nav_r ul li .weixini {
+  color: #37A24A;
+}
+
+#logo {
+  padding-top: 18px;
+}
+
+#logo .logo {
+  padding-left: 61px;
+  padding-bottom: 60px;
+}
+
+#login {
+  height: 620px;
+  width: 100%;
+}
+
+#login .login_img {
+  float: left;
+  width: 600px;
+  height: 420px;
+  padding-left: 61px;
+  padding-top: 74px;
+}
+
+#login .login_img img {
+  width: 100%;
+  height: 420px;
+}
+
+#login .login {
+  float: left;
+  width: 424px;
+  height: 560px;
+  border: 1px solid #ddd;
+  padding: 35px;
+}
+
+#login .login .login_t {
+  height: 30px;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+#login .login .login_t .denglu {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+}
+
+#login .login .login_t .go_zc {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  bottom: 5px;
+  right: 10px;
+}
+
+#login .login .login_t .go_zc a {
+  color: #EC3E7D;
+  text-decoration: none;
+}
+
+#login .login .login_c input {
+  width: 335px;
+  height: 34px;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+#login .login .login_c .code {
+  width: 129px;
+  float: left;
+  margin-right: 3px;
+}
+
+#login .login .login_c .showcode {
+  display: inline-block;
+  width: 84px;
+  height: 38px;
+  float: left;
+  background-color: #F58FC4;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 38px;
+  margin-bottom: 35px;
+}
+
+#login .login .login_c .anew {
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+  line-height: 38px;
+  margin-bottom: 35px;
+}
+
+#login .login .login_c .anew a {
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#login .login .login_c #jizhu {
+  width: 12px;
+  height: 14px;
+  margin-bottom: 0;
+}
+
+#login .login .login_c label {
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+#login .login .login_c .forget {
+  font-size: 14px;
+  color: #EC3E7D;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+#login .login .login_c .btn_login {
+  width: 350px;
+  height: 40px;
+  background-color: #EC3E7D;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  border: 0;
+  margin-top: 35px;
+  font-size: 16px;
+}
+
+#login .login .login_b {
+  padding-top: 35px;
+}
+
+#login .login .login_b .dsf {
+  width: 116px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+  margin-top: 10px;
+}
+
+#login .login .login_b .dsf a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+#login .login .login_b .qqlogin, #login .login .login_b .wblogin, #login .login .login_b .zfblogin {
+  display: block;
+  width: 38px;
+  float: left;
+  height: 40px;
+  background: url(../img/qqlogin.png);
+}
+
+#login .login .login_b .wblogin {
+  background: url(../img/wblogin.png);
+}
+
+#login .login .login_b .zfblogin {
+  background: url(../img/zfblogin.png);
+}

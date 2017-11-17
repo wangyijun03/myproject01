@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>列表页</title>
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/good_list.css" />
+        <link rel="stylesheet" type="text/css" href="../font_shasha/iconfont.css" />
+    </head>
+    <body>
+         <!-- 导航栏部分 -->
+        <div id="nav">
+            <div class="container">
+               <div class="nav_l .font12">
+                    <!-- 登陆前显示内容 -->
+                   <span class="login">
+                       <span>欢迎光临莎莎网!</span>
+                       <a href="">登录</a>
+                       <span>或</span>
+                       <a href="">免费注册</a>
+                   </span>
+                   <!-- 登陆后显示的内容 -->
+                   <span class="logined">
+                       <span>您好！</span><span class="vipshow">VIP</span>
+                       <b>0</b><span>积分</span>
+                       <a href="">退出</a>
+                   </span>
+               </div>
+               <div class="nav_r clearfix">
+                   <ul>
+                       <li><i class="iconfont icon-wode-1"></i><a href="">我的账户</a><i></i></li>
+                       <li><i class="iconfont icon-cart"></i><a href="">我的购物车</a></li>
+                       <li><i class="iconfont icon-20151209tubiaolianxizhuanhuan22"></i><a href="">我的收藏</a></li>
+                       <li><a href=" ">我的站内信</a></li>
+                       <li><a href=" ">积分中心</a></li>
+                       <li><a href=" ">Global site</a></li>
+                       <li>关注我们<i class="weiboi iconfont icon-weibo"></i><i class="weixini iconfont icon-weixin"></i></li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+        <!-- 搜索框以及logo -->
+        <div id="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="../img/logo.png" height="42" width="170" alt="" />
+                </div>
+                <div class="kuang">
+                    <div class="shuru">
+                        <input type="text" placeholder="雅诗兰黛" class="key" />
+                    </div>
+                    <button class="btn_search" >搜索</button>
+                    <div class="hot_key">
+                        <a href="">面霜</a><b>|</b>
+                        <a href="">精华</a><b>|</b>
+                        <a href="">保湿</a><b>|</b>
+                        <a href="">眼霜</a><b>|</b>
+                        <a href="">资生堂</a><b>|</b>
+                        <a href="">补水</a><b>|</b>
+                        <a href="">瑞士葆丽美</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主要商品的分类导航栏 -->
+        <div id="nav_class">
+            <div class="container clearfix">
+                <div class="all_class">
+                   <img src="../img/nav.png" height="36" width="43" alt="" />
+                   <span>全部分类</span>
+                    <ul class="main_c">
+                        <li><a href=""><i class="main_i iconfont icon-mianmo"></i>面部护理</a>
+                            <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">洁面/磨砂</a></p>
+                                    <a href="">洗面奶</a>
+                                    <a href="">洗面奶</a>
+                                    <a href="">洗面奶</a>
+                                    <a href="">洗面奶</a>
+                                    <a href="">洗面奶</a>
+                                    <a href="">洗面奶</a>
+                                    <a href="">洗面奶</a>
+                                    <a href="">洗面奶</a>
+                                </li>
+                                 <li>
+                                    <p><a href="" class="title_a">眼部护理/唇部</a></p>
+                                    <a href="">面膜眼霜</a>
+                                    <a href="">面膜眼霜</a>
+                                    <a href="">面膜眼霜</a>
+                                    <a href="">面膜眼霜</a>
+                                    <a href="">面膜眼霜</a>
+                                    <a href="">面膜眼霜</a>
+                                    <a href="">面膜眼霜</a>
+                                    <a href="">面膜眼霜</a>
+                                </li>
+                                 <li>
+                                    <p><a href="" class="title_a">防晒护理</a></p>
+                                    <a href="">防晒乳液</a>
+                                    <a href="">防晒乳液</a>
+                                    <a href="">防晒乳液</a>
+                                    <a href="">防晒乳液</a>
+                                    <a href="">防晒乳液</a>
+                                    <a href="">防晒乳液</a>
+                                    <a href="">防晒乳液</a>
+                                    <a href="">防晒乳液</a>
+                                </li>
+                                 <li>
+                                    <p><a href="" class="title_a">暗疮护理</a></p>
+                                    <a href="">黑头导出膏/液</a>
+                                    <a href="">黑头导出膏/液</a>
+                                    <a href="">黑头导出膏/液</a>
+                                    <a href="">黑头导出膏/液</a>
+                                    <a href="">黑头导出膏/液</a>
+                                </li>
+                                 <li>
+                                    <p><a href="" class="title_a">卸妆油</a></p>
+                                    <a href="">卸妆水</a>
+                                    <a href="">卸妆水</a>
+                                    <a href="">卸妆水</a>
+                                    <a href="">卸妆水</a>
+                                    <a href="">卸妆水</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="main_i iconfont icon-caizhuang"></i>彩妆</a>
+                              <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">面部彩妆</a></p>
+                                    <a href="">隔离霜</a>
+                                    <a href="">隔离霜</a>
+                                    <a href="">隔离霜</a>
+                                </li>
+                                 <li>
+                                    <p><a href="" class="title_a">眼部彩妆</a></p>
+                                    <a href="">眉笔/眉粉</a>
+                                    <a href="">眉笔/眉粉</a>
+                                    <a href="">眉笔/眉粉</a>
+                                    <a href="">眉笔/眉粉</a>
+                                    <a href="">眉笔/眉粉</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="main_i iconfont icon-xiangshui"></i>香水</a>
+                             <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">香水</a></p>
+                                    <a href="">女士香水</a>
+                                    <a href="">男士香水</a>
+                                    <a href="">香水套装</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="main_i iconfont icon-jiankang"></i>健康美肌</a>
+                            <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">健康美肌</a></p>
+                                    <a href="">美容健康品</a>
+                                    <a href="">美容健康品</a>
+                                    <a href="">美容健康品</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="main_i iconfont icon-xiantimeixiong"></i>纤体美胸</a>
+                             <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">纤体美胸</a></p>
+                                    <a href="">纤体护理</a>
+                                    <a href="">纤体护理</a>
+                                    <a href="">纤体护理</a>
+                                    <a href="">纤体食品</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="main_i iconfont icon-gerenhuli"></i>个人护理</a>
+                             <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">身体护理</a></p>
+                                    <a href="">洗发/护发</a>
+                                    <a href="">洗发/护发</a>
+                                    <a href="">洗发/护发</a>
+                                    <a href="">洗发/护发</a>
+                                </li>
+                                 <li>
+                                    <p><a href="" class="title_a">其他</a></p>
+                                    <a href="">隐形眼镜</a>
+                                    <a href="">隐形眼镜</a>
+                                    <a href="">隐形眼镜</a>
+                                    <a href="">隐形眼镜</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="main_i iconfont icon-jianshen"></i>男士专区</a>
+                            <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">男士洁面</a></p>
+                                    <a href="">男士洁面</a>
+                                    <a href="">男士洁面</a>
+                                    <a href="">男士洁面</a>
+                                    <a href="">男士洁面</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="main_i iconfont icon-naiping"></i>孕婴护理</a>
+                             <ul class="glist">
+                                <li>
+                                    <p><a href="" class="title_a">孕婴护理</a></p>
+                                    <a href="">婴儿沐浴</a>
+                                    <a href="">婴儿沐浴</a>
+                                    <a href="">婴儿沐浴</a>
+                                    <a href="">婴儿沐浴</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                       
+                    </ul>
+                </div>
+                <ul class="nav_r">
+                    <li><a href=""><img src="../img/mdhot.gif" height="36" width="113" alt="" /></a><span>&nbsp;/</span></li>
+                    <li><a href="">面部护理</a><span>&nbsp;/</span></li>
+                    <li><a href="">彩妆</a><span>&nbsp;/</span></li>
+                    <li><a href="">限时特卖</a><span>&nbsp;/</span></li>
+                    <li><a href="">贵宾专享</a><span>&nbsp;/</span></li>
+                    <li><a href="">闪电保税区</a><span>&nbsp;/</span></li>
+                    <li><a href="">轻仓特卖</a><span>&nbsp;/</span></li>
+                    <li class="all_pp"><a href="">所有品牌<i>&nbsp;↓</i></a>
+                        <ul class="all_pinpai clearfix">
+                            <div class="all_sanjiao"></div>
+                            <div class="hot_pinpai">热门品牌</div>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <li><a href="">森田药妆  SAM TIN</a></li>
+                            <div class="look_all"><a href="">查看所有品牌</a></div>
+                            <div class="all_logo">
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                                <div><a href=""><img src="../img/all_logo.png" height="58" width="98" alt="" /></a></div>
+                               
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 列表页主体部分开始 -->
+        <div id="list">
+            <div class="cont clearfix">
+                <div class="list_l">
+                    <div class="list_lt">
+                        <span>产品分类</span>
+                    </div>
+                    <div class="list_c">
+                        <ul class="goodtype">
+                            <li>
+                                <i>▶</i>
+                                <a href="">面部护肤</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">洁面</a></li>
+                                    <li><i>&gt;</i><a href="">磨砂</a></li>
+                                    <li><i>&gt;</i><a href="">卸妆</a></li>
+                                    <li><i>&gt;</i><a href="">化妆水</a></li>
+                                    <li><i>&gt;</i><a href="">精华</a></li>
+                                    <li><i>&gt;</i><a href="">面霜</a></li>
+                                    <li><i>&gt;</i><a href="">面膜</a></li>
+                                    <li><i>&gt;</i><a href="">肩部护理</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">面部护肤</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">洁面</a></li>
+                                    <li><i>&gt;</i><a href="">磨砂</a></li>
+                                    <li><i>&gt;</i><a href="">卸妆</a></li>
+                                    <li><i>&gt;</i><a href="">化妆水</a></li>
+                                    <li><i>&gt;</i><a href="">精华</a></li>
+                                    <li><i>&gt;</i><a href="">面霜</a></li>
+                                    <li><i>&gt;</i><a href="">面膜</a></li>
+                                    <li><i>&gt;</i><a href="">肩部护理</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">彩妆</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">隔离霜</a></li>
+                                    <li><i>&gt;</i><a href="">粉底</a></li>
+                                    <li><i>&gt;</i><a href="">bb霜</a></li>
+                                    <li><i>&gt;</i><a href="">cc霜</a></li>
+                                    <li><i>&gt;</i><a href="">胭脂</a></li>
+                                    <li><i>&gt;</i><a href="">眉笔</a></li>
+                                    <li><i>&gt;</i><a href="">眉粉</a></li>
+                                    <li><i>&gt;</i><a href="">眼线</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">香水</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">女士香水</a></li>
+                                    <li><i>&gt;</i><a href="">男士香水</a></li>
+                                    <li><i>&gt;</i><a href="">香水套装</a></li>
+                                    <li><i>&gt;</i><a href="">化妆水</a></li>
+                                    <li><i>&gt;</i><a href="">香水工具</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">健康美肌</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">美容补充品</a></li>
+                                    <li><i>&gt;</i><a href="">保健品</a></li>
+                                    <li><i>&gt;</i><a href="">美容补充品</a></li>
+                                    <li><i>&gt;</i><a href="">化妆水</a></li>
+                                    <li><i>&gt;</i><a href="">非处方药品</a></li>
+                                    <li><i>&gt;</i><a href="">健康零食</a></li>
+                                    <li><i>&gt;</i><a href="">天然草本茶</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">纤体美胸</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">纤体护理</a></li>
+                                    <li><i>&gt;</i><a href="">纤体食品</a></li>
+                                    <li><i>&gt;</i><a href="">纤体工具</a></li>
+                                    <li><i>&gt;</i><a href="">纤体套装</a></li>
+                                    <li><i>&gt;</i><a href="">美胸工具</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">个人护理</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">沐浴/护肤</a></li>
+                                    <li><i>&gt;</i><a href="">洗发/护发</a></li>
+                                    <li><i>&gt;</i><a href="">头发造型</a></li>
+                                    <li><i>&gt;</i><a href="">手足部护理</a></li>
+                                    <li><i>&gt;</i><a href="">脱毛用品</a></li>
+                                    <li><i>&gt;</i><a href="">女性护理</a></li>
+                                    <li><i>&gt;</i><a href="">止汗香体</a></li>
+                                    <li><i>&gt;</i><a href="">隐形眼镜</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">男士专区</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">男士洁面</a></li>
+                                    <li><i>&gt;</i><a href="">男士护肤</a></li>
+                                    <li><i>&gt;</i><a href="">剃须护理</a></li>
+                                    <li><i>&gt;</i><a href="">男士头部护理</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">孕婴护理</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">婴儿沐浴</a></li>
+                                    <li><i>&gt;</i><a href="">婴儿护肤</a></li>
+                                    <li><i>&gt;</i><a href="">婴儿食品</a></li>
+                                    <li><i>&gt;</i><a href="">孕妇护肤</a></li>
+                                    <li><i>&gt;</i><a href="">孕妇食品</a></li>
+                                    <li><i>&gt;</i><a href="">其他孕婴工具</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">预售现金券</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">现金券</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <i>▶</i>
+                                <a href="">配件</a>
+                                <ul class="xgoodtype">
+                                    <li><i>&gt;</i><a href="">项链</a></li>
+                                    <li><i>&gt;</i><a href="">吊坠</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 右边部分开始 -->
+                <div class="list_r clearfix">
+                    <div class="list_rt">
+                        <span class="yixuan">已选</span>
+                        <span class="czxxx">重置筛选项</span>
+                    </div>
+                    <!-- 分类开始 -->
+                    <div class="list_fl clearfix">
+                        <div class="flei">
+                            <span>分类</span>
+                        </div>
+                        <div class="xflei">
+                            <a href=""><span>泡沫洁面乳</span></a>
+                            <a href=""><span>泡洁面摩丝</span></a>
+                            <a href=""><span>磨砂膏</span></a>
+                        </div>
+                        <div class="xflei">
+                            <a href=""><span>泡洁面摩丝</span></a>
+                            <a href=""><span>磨砂膏</span></a>
+                            <a href=""><span>洁面皂</span></a>
+                        </div>
+                        <div class="xflei">
+                             <a href=""><span>洁面粉</span></a>
+                            <a href=""><span>泡沫洁面乳</span></a>
+                            <a href=""><span>泡沫洁面乳</span></a>
+                        </div>
+                    </div>
+                     <!-- 品牌开始 -->
+                    <div class="list_pp clearfix">
+                        <div class="ppai">
+                            <span>品牌</span>
+                        </div>
+                        <div class="xppai">
+                            <a href=""><span>snp</span></a>
+                            <a href=""><span>我的美丽日记</span></a>
+                            <a href=""><span>希思黎</span></a>
+                        </div>
+                        <div class="xppai">
+                            <a href=""><span>伊丽莎白雅顿</span></a>
+                            <a href=""><span>信美肌</span></a>
+                            <a href=""><span>雪肌精</span></a>
+                        </div>
+                        <div class="xppai">
+                             <a href=""><span>瑞李白诗没</span></a>
+                            <a href=""><span>森田药妆</span></a>
+                            <a href=""><span>泡沫洁</span></a>
+                        </div>
+                    </div>
+                      <!-- 功效开始 -->
+                    <div class="list_pp clearfix">
+                        <div class="ppai">
+                            <span>功效</span>
+                        </div>
+                        <div class="xppai">
+                            <a href=""><span>舒缓</span></a>
+                            <a href=""><span>美白祛斑</span></a>
+                            <a href=""><span>深层清洁</span></a>
+                        </div>
+                        <div class="xppai">
+                            <a href=""><span>胶原增生</span></a>
+                            <a href=""><span>提亮肤色</span></a>
+                            <a href=""><span>温水卸妆</span></a>
+                        </div>
+                        <div class="xppai">
+                             <a href=""><span>抗痘去印</span></a>
+                            <a href=""><span>深层保湿</span></a>
+                            <a href=""><span>洁白</span></a>
+                        </div>
+                    </div>
+                    <!-- 排序开始 -->
+                    <div class="list_px">
+                        <button>排序</button>
+                        <button>销售</button>
+                        <button>人气</button>
+                        <button>评分</button>
+                        <button>时间</button>
+                        <button>价格</button>
+                        <input type="checkbox" id="zktm"/><label for="zktm">只看特卖</label>
+                        <div class="yeshu">
+                            <button>◀</button><span>1/44</span><button>▶</button>
+                        </div>
+                    </div>
+                    <!-- 商品列表正式开始 -->
+                    <div class="good_main">
+                        <ul class="gd_list clearfix">
+                            <li>
+                                <div class="gd_img">
+                                    <img src="../img/gd_img.jpg" alt="" />
+                                </div>
+                                <div class="gd_price">
+                                    <span class="xgd_p">￥369.0</span>
+                                    <span class="ygd_p">490.0</span>
+                                    <span class="dazhe">7.5折</span>
+                                </div>
+                                <div class="gd_name">
+                                    <p class="gdn1"><a href="">伊丽莎白 · 雅顿</a></p>
+                                    <p class="gdn2">升级版金装时空修护胶囊</p>
+                                </div>
+                                <div class="gd_zhong">
+                                    <span>200毫升</span>
+                                </div>
+                                <div class="xiabian">
+                                     <a href=""><span class="gd_qg">立即抢购</span></a>
+                                </div> 
+                                <div class="youbian">
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="gd_img">
+                                    <img src="../img/gd_img.jpg" alt="" />
+                                </div>
+                                <div class="gd_price">
+                                    <span class="xgd_p">￥369.0</span>
+                                    <span class="ygd_p">490.0</span>
+                                    <span class="dazhe">7.5折</span>
+                                </div>
+                                <div class="gd_name">
+                                    <p class="gdn1"><a href="">伊丽莎白 · 雅顿</a></p>
+                                    <p class="gdn2">升级版金装时空修护胶囊</p>
+                                </div>
+                                <div class="gd_zhong">
+                                    <span>200毫升</span>
+                                </div>
+                                <div class="xiabian">
+                                     <a href=""><span class="gd_qg">立即抢购</span></a>
+                                </div> 
+                                <div class="youbian">
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="gd_img">
+                                    <img src="../img/gd_img.jpg" alt="" />
+                                </div>
+                                <div class="gd_price">
+                                    <span class="xgd_p">￥369.0</span>
+                                    <span class="ygd_p">490.0</span>
+                                    <span class="dazhe">7.5折</span>
+                                </div>
+                                <div class="gd_name">
+                                    <p class="gdn1"><a href="">伊丽莎白 · 雅顿</a></p>
+                                    <p class="gdn2">升级版金装时空修护胶囊</p>
+                                </div>
+                                <div class="gd_zhong">
+                                    <span>200毫升</span>
+                                </div>
+                                <div class="xiabian">
+                                     <a href=""><span class="gd_qg">立即抢购</span></a>
+                                </div> 
+                                <div class="youbian">
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="gd_img">
+                                    <img src="../img/gd_img.jpg" alt="" />
+                                </div>
+                                <div class="gd_price">
+                                    <span class="xgd_p">￥369.0</span>
+                                    <span class="ygd_p">490.0</span>
+                                    <span class="dazhe">7.5折</span>
+                                </div>
+                                <div class="gd_name">
+                                    <p class="gdn1"><a href="">伊丽莎白 · 雅顿</a></p>
+                                    <p class="gdn2">升级版金装时空修护胶囊</p>
+                                </div>
+                                <div class="gd_zhong">
+                                    <span>200毫升</span>
+                                </div>
+                                <div class="xiabian">
+                                     <a href=""><span class="gd_qg">立即抢购</span></a>
+                                </div> 
+                                <div class="youbian">
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="gd_img">
+                                    <img src="../img/gd_img.jpg" alt="" />
+                                </div>
+                                <div class="gd_price">
+                                    <span class="xgd_p">￥369.0</span>
+                                    <span class="ygd_p">490.0</span>
+                                    <span class="dazhe">7.5折</span>
+                                </div>
+                                <div class="gd_name">
+                                    <p class="gdn1"><a href="">伊丽莎白 · 雅顿</a></p>
+                                    <p class="gdn2">升级版金装时空修护胶囊</p>
+                                </div>
+                                <div class="gd_zhong">
+                                    <span>200毫升</span>
+                                </div>
+                                <div class="xiabian">
+                                     <a href=""><span class="gd_qg">立即抢购</span></a>
+                                </div> 
+                                <div class="youbian">
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="gd_img">
+                                    <img src="../img/gd_img.jpg" alt="" />
+                                </div>
+                                <div class="gd_price">
+                                    <span class="xgd_p">￥369.0</span>
+                                    <span class="ygd_p">490.0</span>
+                                    <span class="dazhe">7.5折</span>
+                                </div>
+                                <div class="gd_name">
+                                    <p class="gdn1"><a href="">伊丽莎白 · 雅顿</a></p>
+                                    <p class="gdn2">升级版金装时空修护胶囊</p>
+                                </div>
+                                <div class="gd_zhong">
+                                    <span>200毫升</span>
+                                </div>
+                                <div class="xiabian">
+                                     <a href=""><span class="gd_qg">立即抢购</span></a>
+                                </div> 
+                                <div class="youbian">
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div class="gd_img">
+                                    <img src="../img/gd_img.jpg" alt="" />
+                                </div>
+                                <div class="gd_price">
+                                    <span class="xgd_p">￥369.0</span>
+                                    <span class="ygd_p">490.0</span>
+                                    <span class="dazhe">7.5折</span>
+                                </div>
+                                <div class="gd_name">
+                                    <p class="gdn1"><a href="">伊丽莎白 · 雅顿</a></p>
+                                    <p class="gdn2">升级版金装时空修护胶囊</p>
+                                </div>
+                                <div class="gd_zhong">
+                                    <span>200毫升</span>
+                                </div>
+                                <div class="xiabian">
+                                     <a href=""><span class="gd_qg">立即抢购</span></a>
+                                </div> 
+                                <div class="youbian">
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                    <div><img src="../img/gd_img.jpg" alt="" /></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

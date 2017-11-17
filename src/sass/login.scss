@@ -1,0 +1,193 @@
+ $fense:#EC3E7D;
+ //粉色主色
+#nav{
+    $nav_color:#6C6C6C;
+    font-size:12px;
+    height:32px;
+    width:100%;
+    border:1px solid #ccc;
+    background:#F2F2F2;
+    line-height: 32px;
+    .nav_l{
+      float:left;
+      width: 250px;
+      .login{
+          color:#6C6C6C;
+         a{
+         color:#EC3E7D;
+         text-decoration:underline;
+         }
+
+      }
+      .logined{
+         color:#6C6C6C;
+          display:none;
+         a{
+         color:#EC3E7D;
+         text-decoration:underline;
+         }
+      }
+    }
+    .nav_r{
+      width: 670px;
+      float:left;
+      margin-left:284px;
+      ul{
+        width: 670px;
+        height: 32px;
+        float:right;
+        li{
+          float:left;
+          padding:0 10px;
+          a{
+            color:$nav_color;
+            text-decoration:none;
+          }
+          i{
+            padding:0 5px;
+            color:$fense;
+          }
+          .weiboi{
+            color:#E99E40;
+          }
+          .weixini{
+            color:#37A24A;
+          }
+        }
+      }
+    }
+}
+#logo{
+  padding-top:18px;
+  .logo{
+    padding-left:61px;
+    padding-bottom:60px;
+  }
+}
+#login{
+  height: 620px;
+  width: 100%;
+  .login_img{
+    float:left;
+    width: 600px;
+    height: 420px;
+    padding-left:61px;
+    padding-top:74px;
+    img{width: 100%;height: 420px;}
+  }
+  .login{
+    float:left;
+    width: 424px;
+    height: 560px;
+    border:1px solid #ddd;
+      padding:35px;
+    .login_t{
+      height: 30px;
+      position:relative;
+        margin-bottom:36px;
+      .denglu{
+        display:block;
+        font-size: 20px;
+        position:absolute;
+      }
+      .go_zc{
+        display:block;
+        position:absolute;
+        font-size: 14px;
+        bottom:5px;
+        right:10px;
+        a{color:$fense;text-decoration:none;}
+      }
+    }
+    .login_c{
+      input{
+        width: 335px;
+        height: 34px;
+        padding:0 0 0 15px;
+        font-size: 16px;
+        margin-bottom:35px;
+      }
+      .code{
+        width: 129px;
+        float:left;
+        margin-right:3px;
+      }
+      .showcode{
+        display:inline-block;
+        width: 84px;
+        height: 38px;
+        float:left;
+        background-color: #F58FC4;
+        text-align:center;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 38px;
+        margin-bottom:35px;
+
+      }
+      .anew{
+        display:inline-block;
+        width: 100px;
+        height: 38px;
+        line-height: 38px;
+        margin-bottom:35px;
+        a{
+        color:#999;
+        font-size: 14px;
+        text-decoration:none;
+        }
+      }
+      #jizhu{
+        width: 12px;
+        height: 14px;
+        margin-bottom:0;
+      }
+      label{font-size: 14px;padding-left:15px;}
+      .forget{
+        font-size: 14px;
+        color:$fense;
+        text-decoration:none;
+        padding-left:15px;
+      }
+      .btn_login{
+        width: 350px;
+        height: 40px;
+        background-color: $fense;
+        text-align:center;
+        color:#fff;
+        line-height: 40px;
+        border:0;
+        margin-top:35px;
+        font-size: 16px;
+      }
+    }
+    .login_b{
+      padding-top:35px;
+      .dsf{
+        width: 116px;
+        height: 40px;
+        float:left;
+        line-height: 40px;
+        margin-top:10px;
+        a{
+          text-decoration:none;
+          color:#000;
+          font-size: 14px;
+        }
+      }
+      .qqlogin,.wblogin,.zfblogin{
+        display:block;
+        width: 38px;
+        float:left;
+        height: 40px;
+        background: url(../img/qqlogin.png);
+      }
+       .wblogin{
+        background: url(../img/wblogin.png);
+      }
+       .zfblogin{
+        background: url(../img/zfblogin.png);
+      }
+    }
+  }
+}

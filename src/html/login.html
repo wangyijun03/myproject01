@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>登录页面</title>
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../font_shasha/iconfont.css" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    </head>
+    <body>
+         <!-- 导航栏部分 -->
+        <div id="nav">
+            <div class="container">
+               <div class="nav_l .font12">
+                    <!-- 登陆前显示内容 -->
+                   <span class="login">
+                       <span>欢迎光临莎莎网!</span>
+                       <a href="">登录</a>
+                       <span>或</span>
+                       <a href="">免费注册</a>
+                   </span>
+                   <!-- 登陆后显示的内容 -->
+                   <span class="logined">
+                       <span>您好！</span><span class="vipshow">VIP</span>
+                       <b>0</b><span>积分</span>
+                       <a href="">退出</a>
+                   </span>
+               </div>
+               <div class="nav_r clearfix">
+                   <ul>
+                       <li><i class="iconfont icon-wode-1"></i><a href="">我的账户</a><i></i></li>
+                       <li><i class="iconfont icon-cart"></i><a href="">我的购物车</a></li>
+                       <li><i class="iconfont icon-20151209tubiaolianxizhuanhuan22"></i><a href="">我的收藏</a></li>
+                       <li><a href=" ">我的站内信</a></li>
+                       <li><a href=" ">积分中心</a></li>
+                       <li><a href=" ">Global site</a></li>
+                       <li>关注我们<i class="weiboi iconfont icon-weibo"></i><i class="weixini iconfont icon-weixin"></i></li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+        <!-- 莎莎网logo的div -->
+        <div id="logo">
+            <div class="container">
+            <div class="logo">
+                <img src="../img/logo.png" height="42" width="170" alt="" />
+            </div>
+            </div>
+        </div>
+        <!-- 登录主体内容部分 -->
+        <div id="login">
+            <div class="container">
+                <div class="login_img">
+                    <img src="../img/login_img.png" alt="" />
+                </div>
+                <div class="login">
+                    <div class="login_t">
+                        <span class="denglu">用户登录</span>
+                        <span class="go_zc">还没有莎莎账号？<a href="">立即注册</a></span>
+                    </div>
+                    <div class="login_c">
+                        <input type="text" placeholder="邮箱/手机" class="username"/><br/>
+                        <input type="text" placeholder="填写密码" class="password" /><br>
+                        <input type="text" class="code" /><span class="showcode" >0932</span>
+                        <span class="anew"><a href="javascript:void(0);">看不清？换一张</a></span><br/>
+                        <input type="checkbox" id="jizhu"/><label for="jizhu">记住我</label> <a href="javascript:void(0);" class="forget">忘记密码？</a><br/>
+                        <button class="btn_login">登录</button>
+                    </div>
+                    <div class="login_b">
+                        <p>第三方账号登录</p>
+                        <div class="dsf"><a href=""><i class="qqlogin"></i>QQ登录</a></div>
+                        <div class="dsf"><a href=""><i class="wblogin"></i>微博登录</a></div>
+                        <div class="dsf"><a href=""><i class="zfblogin"></i>支付宝登录</a></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

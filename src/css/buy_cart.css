@@ -1,0 +1,348 @@
+#nav {
+  font-size: 12px;
+  height: 32px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #F2F2F2;
+  line-height: 32px;
+}
+
+#nav .nav_l {
+  float: left;
+  width: 250px;
+}
+
+#nav .nav_l .login {
+  color: #6C6C6C;
+}
+
+#nav .nav_l .login a {
+  color: #EC3E7D;
+  text-decoration: underline;
+}
+
+#nav .nav_l .logined {
+  color: #6C6C6C;
+  display: none;
+}
+
+#nav .nav_l .logined a {
+  color: #EC3E7D;
+  text-decoration: underline;
+}
+
+#nav .nav_r {
+  width: 670px;
+  float: left;
+  margin-left: 284px;
+}
+
+#nav .nav_r ul {
+  width: 670px;
+  height: 32px;
+  float: right;
+}
+
+#nav .nav_r ul li {
+  float: left;
+  padding: 0 10px;
+}
+
+#nav .nav_r ul li a {
+  color: #6C6C6C;
+  text-decoration: none;
+}
+
+#nav .nav_r ul li i {
+  padding: 0 5px;
+  color: #EC3E7D;
+}
+
+#nav .nav_r ul li .weiboi {
+  color: #E99E40;
+}
+
+#nav .nav_r ul li .weixini {
+  color: #37A24A;
+}
+
+#logolc {
+  height: 95px;
+}
+
+#logolc .container {
+  padding: 16px 60px;
+}
+
+#logolc .container > div {
+  float: left;
+}
+
+#logolc .logo_c {
+  margin-left: 80px;
+}
+
+#logolc .logo_r {
+  margin: 20px 0 0 80px;
+}
+
+#carlist {
+  background-color: #F2F2F2;
+}
+
+#carlist .con {
+  width: 988px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#carlist .car_t {
+  height: 32px;
+  background-color: #FFAB2E;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#carlist .baoyou {
+  height: 28px;
+}
+
+#carlist .baoyou p {
+  text-align: right;
+}
+
+#carlist .baoyou p span {
+  color: #f00;
+}
+
+#carlist .car_head {
+  height: 40px;
+  background-color: #fff;
+  border-left: 4px solid #EC3E7D;
+  line-height: 40px;
+}
+
+#carlist .car_head #baoshui {
+  margin-left: 5px;
+}
+
+#carlist .car_head .car_h2 {
+  padding-left: 70px;
+}
+
+#carlist .car_head .car_h3 {
+  padding-left: 350px;
+}
+
+#carlist .car_head .car_h4 {
+  padding-left: 60px;
+}
+
+#carlist .car_ul {
+  padding-bottom: 20px;
+}
+
+#carlist .car_ul li {
+  border-top: 1px solid #ccc;
+  height: 133px;
+  background-color: #fff;
+}
+
+#carlist .car_ul li > div {
+  float: left;
+  padding-top: 30px;
+}
+
+#carlist .car_ul li .xpic {
+  width: 142px;
+}
+
+#carlist .car_ul li .xpic input {
+  margin-left: 10px;
+}
+
+#carlist .car_ul li .xpic img {
+  width: 100px;
+}
+
+#carlist .car_ul li .car_spname {
+  margin-left: 70px;
+  width: 390px;
+}
+
+#carlist .car_ul li .car_spname .spname {
+  margin-bottom: 20px;
+}
+
+#carlist .car_ul li .price {
+  width: 85px;
+  text-align: center;
+}
+
+#carlist .car_ul .sp_num {
+  width: 112px;
+  text-align: center;
+}
+
+#carlist .car_ul .sp_num button {
+  width: 14px;
+}
+
+#carlist .car_ul .xji {
+  width: 80px;
+  text-align: center;
+  color: #EC3E7D;
+}
+
+#carlist .car_ul .del {
+  text-align: center;
+  width: 100px;
+}
+
+#carlist .car_ul .del a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+#carlist .youhui {
+  height: 40px;
+  background-color: #fff;
+  border-left: 4px solid #EC3E7D;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+#carlist .youhui .yxs {
+  padding-right: 120px;
+}
+
+#carlist .total {
+  background-color: #fff;
+  position: relative;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+#carlist .total .keep, #carlist .total .empty {
+  border: none;
+  background-color: #fff;
+  padding-left: 15px;
+}
+
+#carlist .total .total_sp {
+  padding-left: 406px;
+}
+
+#carlist .total .jianshu {
+  color: #EC3E7D;
+  padding: 0 5px;
+}
+
+#carlist .total .yingfu {
+  padding-left: 30px;
+}
+
+#carlist .total .jine {
+  color: #EC3E7D;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#carlist .total .jiezhang {
+  width: 136px;
+  height: 40px;
+  background-color: #EC3E7D;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  color: #fff;
+}
+
+#carlist .nnn {
+  height: 1px;
+}
+
+#footer {
+  margin-top: 20px;
+}
+
+#footer .footer_link {
+  float: left;
+  width: 180px;
+  padding-top: 30px;
+}
+
+#footer .footer_link a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#footer .footer_link dt a {
+  color: #111;
+}
+
+#footer .footer_link dd a {
+  color: #999;
+}
+
+#footer .footer_ewm {
+  float: left;
+}
+
+#footer .footer_ewm .ewm_w {
+  text-align: center;
+  float: left;
+  width: 128px;
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+#footer .footer_ewm .ewm_w img {
+  width: 100%;
+}
+
+#footer .footer_ewm .ewm_w:nth-child(1) {
+  margin-right: 30px;
+}
+
+#state {
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+  padding-top: 24px;
+}
+
+#state .state {
+  height: 24px;
+  width: 100%;
+  line-height: 24px;
+}
+
+#state .state a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 14px;
+}
+
+#state .state b {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#state .state a:nth-child(1) {
+  padding-left: 0;
+}
+
+#state .copr {
+  height: 14px;
+  padding-top: 14px;
+}
+
+#state .copr p {
+  font-size: 14px;
+  color: #fff;
+}
