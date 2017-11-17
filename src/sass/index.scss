@@ -41,6 +41,7 @@ $mainbgc:#F2F2F2;
         li{
           float:left;
           padding:0 10px;
+          position:relative;
           a{
             color:$nav_color;
             text-decoration:none;
@@ -54,6 +55,23 @@ $mainbgc:#F2F2F2;
           }
           .weixini{
             color:#37A24A;
+          }
+        }
+        .myacc{
+          width: 80px;
+          height: 0px;
+          padding-left:15px;
+          background-color: #fff;
+          position:absolute;
+          left:0;
+          top:30px;
+          z-index:100000;
+          border:1px solid #ddd;
+          // display:none;
+          overflow:hidden;
+          li{
+            height: 24px;
+            a:hover{color:$fense;}
           }
         }
       }

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-13 16:43:10
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-13 21:02:10
+* @Last Modified time: 2017-11-17 12:08:25
 */
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -99,6 +99,44 @@ document.addEventListener('DOMContentLoaded',function(){
                 }
 
                 animate(ggul,{top:-ggidx*ggheight});
+            };
 
-            }
+
+            //我的账户+++++++++++++++++++++++
+          var rul = document.querySelector('.rul');
+          var navItem = rul.children;
+          for(let i=0;i<navItem.length-1;i++){
+                navItem[i].onmouseover = function(e){
+                  e = e || window.event;
+                  this.style.backgroundColor='#fff';
+                  var ul = this.children[2];
+                  var hitem=ul.children.length;
+                  // hitem = hitem>10? 9:hitem;
+                  var height = hitem*24;
+                  var ulhigh=getStyle(ul,'height');
+                  ulhigh = ulhigh.slice(0,-2);
+                  
+                    // animate(ul,{height:0});
+                    animate(ul,{height:height});
+                }
+                navItem[i].onmouseout = function(e){
+                  e = e || window.event;
+                  this.style.backgroundColor='#F2F2F2';
+                  var ul = this.children[2];
+                  var hitem=ul.children.length;
+                  // hitem = hitem>10? 9:hitem;
+                  var height = hitem*24;
+                  var ulhigh=getStyle(ul,'height');
+                  ulhigh = ulhigh.slice(0,-2);
+                  
+                    // animate(ul,{height:0});
+                    animate(ul,{height:0});
+                }
+              // if(ulhigh>0){
+              // }else{
+              // }
+              // e.preventDefault ? e.preventDefault() : returnValue = false;
+         
+
+          }
 });

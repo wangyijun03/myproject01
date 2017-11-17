@@ -46,6 +46,7 @@
 #nav .nav_r ul li {
   float: left;
   padding: 0 10px;
+  position: relative;
 }
 
 #nav .nav_r ul li a {
@@ -64,6 +65,27 @@
 
 #nav .nav_r ul li .weixini {
   color: #37A24A;
+}
+
+#nav .nav_r ul .myacc {
+  width: 80px;
+  height: 0px;
+  padding-left: 15px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  z-index: 100000;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+#nav .nav_r ul .myacc li {
+  height: 24px;
+}
+
+#nav .nav_r ul .myacc li a:hover {
+  color: #EC3E7D;
 }
 
 #header {

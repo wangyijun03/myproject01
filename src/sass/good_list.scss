@@ -481,3 +481,56 @@ $mainbgc:#F2F2F2;
     }
   }
 }
+#footer{
+  .footer_link{
+    float:left;
+    width: 180px;
+    padding-top:30px;
+    a{text-decoration:none;
+      font-size:13px;
+    }
+    dt{
+      a{color:#111;}
+    }
+    dd{
+      a{
+        color:#999;
+      }
+    }
+  }
+  .footer_ewm{
+    float:left;
+    .ewm_w{
+      text-align:center;
+      float:left;
+      width: 128px;
+      margin-top:25px;
+      font-size: 12px;
+      img{width: 100%;}
+    }
+    .ewm_w:nth-child(1){
+      margin-right:30px;
+    }
+  }
+}
+#state{
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+    padding-top:24px;
+  .state{
+    height: 24px;
+    width: 100%;
+    line-height: 24px;
+    a{font-size: 14px;color:#fff;text-decoration:none;padding:0 14px;}
+    b{color:#fff;font-size: 12px;font-weight: normal;}
+    a:nth-child(1){
+      padding-left:0;
+    }
+  }
+  .copr{
+    height: 14px;
+    padding-top:14px;
+    p{font-size: 14px;color:#fff;}
+  }
+}
