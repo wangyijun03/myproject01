@@ -28,12 +28,51 @@ addEventListener('DOMContentLoaded',function(){
             yanzhengma();
         })
 
+        //判断cookie是否存在
+        var cookies = document.cookie;
+            if(cookies.length>0){
+                cookies = cookies.split('; ');
+        console.log(cookies)
+                cookies.forEach(function(cookie){
+                    var temp = cookie.split('=');
+                    if(temp[0] === 'username'){
+                        $username = JSON.parse(temp[1]);
+                    }else if(temp[0]==='password'){
+                        $password = JSON.parse(temp[1]);
+                    }
+                });
+
+                if($username && $password){
+                    $('.username').val($username);
+                    $('.password').val($password);
+                // 跳转到主页
+                if(confirm('你确定要跳转吗？')){
+                    location.href = '../index.html';
+                }
+            }
+            }
+
 
         $('.btn_login').click(function(){
             var $username = $('.username').val();
             var $password = $('.password').val();
 
+            var $showcode = $('.showcode').html();
+            var $code = $('.code').val();
+            if($showcode != $code){
+                alert('验证码错误');
+                yanzhengma();
+                return false;
+            }
 
+           if($('#jizhu').prop('checked')){
+                // 把用户/密码保存到cookie中
+             var date = new Date();
+             date.setDate(date.getDate() + 7);
+
+            document.cookie = 'username=' + $username + ';expires=' + date.toUTCString() + ';path=/';
+            document.cookie = 'password=' + $password + ';expires=' + date.toUTCString();
+            }
                 $.ajax({
                 url:"../api/login.php",
                 type:"get",
@@ -57,7 +96,7 @@ addEventListener('DOMContentLoaded',function(){
                         location.href = '../index.html';
 
                     }else if(res === 'fail'){
-                        alert('login error')
+                        alert('登录错误，检查重新登录')
                         // location.reload();
                     }
 

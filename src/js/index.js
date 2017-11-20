@@ -1,9 +1,4 @@
-/* 
-* @Author: Marte
-* @Date:   2017-11-13 16:43:10
-* @Last Modified by:   Marte
-* @Last Modified time: 2017-11-17 12:08:25
-*/
+
 
 document.addEventListener('DOMContentLoaded',function(){
 
@@ -20,20 +15,31 @@ document.addEventListener('DOMContentLoaded',function(){
 
             // 隐藏除index外所有图片
             for(var i=0;i<len;i++){
+                        console.log(i,index)
                 if(i!==index){
                     animate(bigItems[i],{opacity:0});
                 }
-            }
+            };
+
+            function autoPlay(){
+                index++;
+                showImg();
+                // console.log(index);
+            };
             // 生成页码
              var page=document.createElement('div');
                 page.className='page';
-
                 for(var i=0;i<len;i++){
+
                     var span=document.createElement('span');
                     //给当前页码加高亮
-                    // index= index>len-1 ? 0:index;
+                    // index++;
+                    index= index>len-1 ? 0:index;
+                    console.log(index)
+
                     if(i===index){
                         span.className='active';
+                        // index++;
                     }
                     page.appendChild(span);
                 }
@@ -48,11 +54,6 @@ document.addEventListener('DOMContentLoaded',function(){
             }
              let timer = setInterval(autoPlay,3000);
 
-            function autoPlay(){
-                index++;
-                showImg();
-                // console.log(index);
-            };
 
 
             function showImg(){
@@ -63,6 +64,17 @@ document.addEventListener('DOMContentLoaded',function(){
                 }
                 animate(bigItems[index],{opacity:1});//animate(bigItems[index],{opacity:1,width:100,height:300});
                 animate(bigItems[lastIndex],{opacity:0});
+
+                 for(var i=0;i<len;i++){
+                        page.children[i].className='';
+                    }
+                    // index= index<len-1 ? index:0;
+                    // page.children[index].className='active';
+                    if(index<len){
+                        page.children[index].className='active';
+                    }else{
+                         page.children[0].className='active';
+                    }
 
                 // 更新lastIndex
                 lastIndex = index;
@@ -136,7 +148,7 @@ document.addEventListener('DOMContentLoaded',function(){
               // }else{
               // }
               // e.preventDefault ? e.preventDefault() : returnValue = false;
-         
+        
 
           }
 });

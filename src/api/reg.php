@@ -22,9 +22,9 @@
     $result=$conn->query($sql);
 
     if($result){
-        echo "Error";
-    }else{
         echo "ok";
+    }else{
+        echo "Error";
     }
 
     //关闭连接

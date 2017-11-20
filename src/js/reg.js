@@ -80,7 +80,8 @@ addEventListener('DOMContentLoaded',function(){
                         location.href = '../html/login.html';
                     }else if(res === 'Error'){
                         alert('请输入正确的账号!')
-                        location.reload();
+                        $username.focus();
+                        // location.reload();
                     }
 
                 }

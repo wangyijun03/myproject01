@@ -339,12 +339,6 @@
   height: 420px;
 }
 
-#lunbt .page {
-  position: absolute;
-  right: 600px;
-  bottom: 60px;
-}
-
 #lunbt .page span {
   display: inline-block;
   width: 20px;
@@ -357,7 +351,13 @@
   line-height: 20px;
 }
 
-#lunbt .page span .active {
+#lunbt .page {
+  position: absolute;
+  right: 600px;
+  bottom: 60px;
+}
+
+#lunbt .page .active {
   background-color: #f00;
 }
 
